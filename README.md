@@ -5,4 +5,4 @@
 
 ## Samples of work/ image and mp3 do not belong to this user.
 
-  The work of author/publishers should be labeled in the title/image.
+  The work of the authors/publishers should be labeled in the title/image.
