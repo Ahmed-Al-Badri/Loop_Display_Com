@@ -1,7 +1,8 @@
 let base = window.location.origin;
+base =
+  "https://raw.githubusercontent.com/Ahmed-Al-Badri/Loop_Display_Com/master/";
 base += "/src/data/";
 base = base.replace("undefined", "");
-
 let Files = [
   {
     title: `Lil' Sunday Barbecue`,
