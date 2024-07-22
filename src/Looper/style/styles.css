@@ -56,3 +56,6 @@
 body {
   background-color: #1c1c1f;
 }
+body::-webkit-scrollbar {
+  width: 0px;
+}
