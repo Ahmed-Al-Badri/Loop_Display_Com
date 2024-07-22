@@ -1,0 +1,51 @@
+@import url("../styles/format.css");
+.withplayers {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+}
+.imgplayer {
+  display: inline-block;
+  position: static;
+  height: 100%;
+  width: auto;
+  border-radius: 10px;
+}
+.playerformat {
+  width: 100%;
+  height: 100%;
+  display: inline-flex !important;
+  flex-wrap: nowrap !important;
+  flex-direction: column !important;
+}
+.playertitle {
+  display: inline-block;
+  width: 100%;
+  margin: auto;
+  height: auto;
+}
+.playerplayers {
+  display: inline-flex !important;
+  width: 100%;
+  justify-content: space-around;
+  align-content: center;
+}
+.formating {
+  display: inline-block;
+  position: absolute;
+  background-color: var(--center);
+  border-radius: 10px;
+}
+.formating * {
+  color: var(--words);
+  margin: 0px;
+  text-align: center;
+}
+.margincanvas {
+  height: 5px;
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 5px;
+}

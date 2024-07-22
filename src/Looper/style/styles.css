@@ -1,0 +1,58 @@
+@import url("../../styles/format.css");
+.format > div {
+  display: inline-block;
+  position: static;
+}
+.infoformatresults > * {
+  width: auto;
+  height: 100%;
+}
+.format {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  border-radius: 10px;
+}
+.imgformat {
+  position: static;
+  height: 100%;
+  width: auto;
+  border-radius: 10px;
+}
+.infoformat {
+  width: 100%;
+  height: 100%;
+  display: grid !important;
+  grid-template-columns: 100%;
+  grid-template-rows: 40% 60%;
+  color: var(--words);
+}
+.infoformatresults {
+  display: block;
+  position: sticky;
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  flex-basis: content;
+  justify-content: space-around;
+}
+.infoformatresults > div {
+  text-wrap: nowrap;
+}
+.infoformattop {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+.infoformattop > * {
+  transform: translateY(50%);
+}
+.mainblock:focus > .display {
+  opacity: 40% !important;
+}
+.mainblock:focus {
+  background-color: blue !important;
+  position: absolute;
+}
+body {
+  background-color: #1c1c1f;
+}

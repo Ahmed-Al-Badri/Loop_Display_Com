@@ -1,0 +1,12 @@
+:root {
+  --center: rgba(50, 49, 49, 0.612);
+  --words: #dbdbdb;
+  --chars_label: rgba(39, 19, 127, 0.612);
+  --player_color: rgba(255, 255, 255, 0.01);
+}
+.format {
+  color: blue;
+  background-color: var(--center);
+  position: absolute;
+  font-size: auto;
+}

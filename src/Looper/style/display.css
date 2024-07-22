@@ -1,0 +1,36 @@
+@import "../../styles/format.css";
+.centerMedia > * {
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.itemsplayers {
+  background-color: var(--player_color);
+}
+.album > * {
+  height: 70vh !important;
+}
+.found > * {
+  height: 30vh !important;
+}
+.playerplayers {
+  padding: 10px;
+  height: 100%;
+  align-items: center;
+  flex-wrap: wrap !important;
+}
+.playerplayers .itemsplayers {
+  width: 45%;
+  height: auto;
+  padding-bottom: 1px;
+  margin: 5px;
+}
+.margincanvas {
+  padding: 2px;
+  height: 10px;
+}
+@media only screen and (min-width: 1000px) {
+  .playerplayers .itemsplayers {
+    width: 30%;
+  }
+}

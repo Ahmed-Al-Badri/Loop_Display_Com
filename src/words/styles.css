@@ -1,0 +1,19 @@
+@import "../styles/format.css";
+.stringformat {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: flex-end;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.charletter {
+  display: inline-block;
+  font-size: 500%;
+  margin: auto;
+  text-align: center;
+  color: var(--chars_label);
+}
+.stringformat:hover {
+  background-color: rgba(7, 57, 206, 0.237);
+}
