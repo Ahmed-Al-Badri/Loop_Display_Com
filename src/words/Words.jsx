@@ -37,6 +37,9 @@ export default class Words extends Component {
   onkeys(key_down) {
     let string_ = this.state.string;
     if (key_down.key.length == 1) {
+      if (key_down.key == " ") {
+        key_down.preventDefault();
+      }
       if (!(string_ == "" && key_down.key == " ")) {
         string_ += key_down.key;
       }
