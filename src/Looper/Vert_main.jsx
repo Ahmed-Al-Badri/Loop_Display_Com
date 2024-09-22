@@ -102,6 +102,7 @@ class Loop extends Component {
         res.preventDefault();
         this.stop = true;
         this.change(res);
+
         this.display();
       });
     } catch (error) {}
