@@ -41,12 +41,13 @@ export default class Media extends Component {
               className="formating"
             >
               <div className="withplayers">
-                <img
-                  className="imgplayer"
-                  src={`
+                <div className="imgplayerfilter">
+                  <img
+                    className="imgplayer"
+                    src={`
                     ${this.state.data.coverArt.sizes.M}`}
-                />
-
+                  />
+                </div>
                 <div className="playerformat">
                   <div className="playertitle">{this.state.data.title}</div>
                   <div className="playerplayers">

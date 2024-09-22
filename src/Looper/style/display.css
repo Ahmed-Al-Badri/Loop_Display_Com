@@ -34,3 +34,13 @@
     width: 30%;
   }
 }
+@media only screen and (max-width: 999px) {
+  .playerplayers .itemsplayers {
+    width: 20%;
+  }
+  .imgplayerfilter {
+    width: 0px;
+    opacity: 0.6;
+    z-index: -1;
+  }
+}
