@@ -98,6 +98,12 @@ class Loop extends Component {
         this.change(vals);
         this.display();
       });
+      this.window.addEventListener("scroll", (res) => {
+        res.preventDefault();
+        this.stop = true;
+        this.change(res);
+        this.display();
+      });
     } catch (error) {}
   }
 
