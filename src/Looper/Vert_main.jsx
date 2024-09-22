@@ -57,12 +57,10 @@ class Loop extends Component {
   }
 
   change(value) {
-    console.log("touch move:" + value.deltaY);
     value = {
       amount: (this.state.amount || 0) + (value.deltaY || 0),
       location: this.state.location,
     };
-    //console.log("Amount is " + value.amount);
     if (value.amount >= this.points || value.amount < this.points * -1) {
       if (value.amount >= this.points) {
         value.location -= 1;
@@ -78,7 +76,6 @@ class Loop extends Component {
       value.location = 0;
     }
     this.setState(value);
-    //console.log(this.state.amount + " Data being changed");
   }
 
   set_up_frm() {
@@ -104,39 +101,17 @@ class Loop extends Component {
       });
       this.window.addEventListener("touchstart", (res) => {
         this.touch_tep = res.touches[0].clientY;
-        console.log("On touch is " + this.touch_tep);
       });
 
       this.window.addEventListener("touchmove", (res) => {
         res.preventDefault();
         this.do_touch(res);
         this.stop = true;
-        /*
-        if (this.touch_tep == 0) {
-          this.touch_tep = res.touches[0].clientY;
-        }
-        //this.effect_ck(res.touches[0].clientY);
-        console.log(this.touch_tep - res.touches[0].clientY);
-        let s = this.touch_tep - res.touches[0].clientY;
-
-        if (s != 0) {
-          this.touch_tep = res.touches[0].clientY;
-          s = {
-            deltaY: s,
-          };
-          this.change(s);
-        }
-        //this.display();
-        */
       });
-    } catch (error) {
-      console.log(error);
-    }
+    } catch (error) {}
   }
 
   do_touch(values) {
-    console.log("Opended do touch");
-    console.log(values.touches[0].clientY);
     this.change({
       deltaY: (values.touches[0].clientY - this.touch_tep) / 10,
     });
