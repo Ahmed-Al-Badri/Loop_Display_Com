@@ -101,12 +101,14 @@ class Line extends DDOD {
   }
 }
 
+let s = window.innerWidth / 1600;
 class Circle extends DDOD {
   constructor(args) {
     super(args[0], args[1], args[2], args[3]);
     this.time = 500 + 400 * Math.random();
     this.radius_c = Math.PI / 40.0;
     this.line = this.speed * (4 + Math.random());
+    this.line *= s;
   }
 
   framing() {

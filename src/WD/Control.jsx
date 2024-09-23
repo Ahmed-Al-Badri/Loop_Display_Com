@@ -69,9 +69,11 @@ export default class WHITE {
 
   line(object1, object2) {
     let amount = object2.pows(object1);
-    if (amount < 100) {
+    if (amount < (100.0 * window.innerWidth) / 1800) {
       this.doc.beginPath();
-      this.doc.strokeStyle = `rgba(${this.color}, ${1.0 - amount / 100.0})`;
+      this.doc.strokeStyle = `rgba(${this.color}, ${
+        1.0 - amount / ((100.0 * window.innerWidth) / 1800)
+      })`;
       this.doc.moveTo(object1.cors[0], object1.cors[1]);
       this.doc.lineTo(object2.cors[0], object2.cors[1]);
       this.doc.stroke();
